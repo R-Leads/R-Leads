@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impressum</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: #0f1220;
+      color: #eaeaf0;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .card {
+      background: #151934;
+      border-radius: 14px;
+      padding: 40px 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #aab0ff;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    p {
+      margin: 6px 0;
+      color: #d6d7e3;
+    }
+    .label {
+      color: #9aa0ff;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #9aa0c3;
+      opacity: 0.9;
+    }
+    a {
+      color: #9aa0ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .back {
+      margin-top: 24px;
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #5b63ff, #8b5cff);
+      color: #fff;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 20px rgba(91,99,255,0.35);
+    }
+    .back:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(91,99,255,0.45);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Impressum</h1>
+
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <p><span class="label">Name / Firma:</span> DEIN NAME ODER FIRMENNAME</p>
+      <p><span class="label">Anschrift:</span> STRASSE, HAUSNUMMER<br>PLZ ORT, LAND</p>
+
+      <h2>Kontakt</h2>
+      <p><span class="label">E-Mail:</span> kontakt@deinedomain.de</p>
+      <p><span class="label">Telefon (optional):</span> +49 …</p>
+
+      <h2>Vertretungsberechtigt</h2>
+      <p>DEIN NAME (bei Einzelunternehmen)  
+      <br>oder Geschäftsführer: NAME (bei GmbH/UG)</p>
+
+      <h2>Umsatzsteuer</h2>
+      <p><span class="label">USt-IdNr. gemäß §27a UStG (falls vorhanden):</span> DEINE UST-ID</p>
+
+      <h2>Inhaltlich verantwortlich</h2>
+      <p>DEIN NAME, Anschrift wie oben</p>
+
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+        allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+        verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
+        zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+      </p>
+
+      <h2>Haftung für Links</h2>
+      <p>
+        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
+        Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+        verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+        Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung,
+        Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+        schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+      </p>
+
+      <a class="back" href="/">Zurück zur Startseite</a>
+
+      <div class="footer">
+        © <span id="year"></span> DEIN NAME / DEINE FIRMA
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
