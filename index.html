@@ -50,11 +50,11 @@
     .option.selected{border-color:var(--primary);background:var(--primary-soft);color:var(--primary)}
     .next{margin-top:12px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#052e16;border:none;border-radius:999px;padding:10px 16px;font-weight:800;cursor:pointer}
     .full{grid-column:1/-1;margin-top:28px}
-    .badges{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .faq details{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:rgba(255,255,255,.03)}
+    .badges{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
     @media (max-width:700px){.badges{grid-template-columns:1fr}}
     .badge{border:1px solid var(--border);border-radius:14px;padding:14px;text-align:center;color:var(--muted)}
-    .faq details{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:rgba(255,255,255,.03)}
-    footer{margin-top:18px;display:flex;gap:16px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
+    footer{grid-column:1/-1;margin-top:24px;display:flex;justify-content:flex-end;gap:16px;font-size:.9rem;color:var(--muted)}
     footer a{color:var(--muted);text-decoration:underline}
     #tally-embed{display:none}
   </style>
@@ -79,11 +79,6 @@
         </div>
 
         <a class="cta" href="#quiz">Termin vereinbaren</a>
-
-        <footer>
-          <a href="./impressum.html">Impressum</a>
-          <a href="./datenschutz.html">Datenschutz</a>
-        </footer>
       </div>
 
       <div class="quiz-card" id="quiz">
@@ -122,18 +117,26 @@
       <div class="full">
         <iframe id="tally-embed" data-tally-src="TALLY_FORM_URL" width="100%" height="640" frameborder="0" title="PV Anfrage Formular"></iframe>
 
-        <div class="badges">
-          <div class="badge">Zertifizierte Partner</div>
-          <div class="badge">Datenschutzkonform</div>
-          <div class="badge">Kostenlos &amp; unverbindlich</div>
-        </div>
-
+        <!-- FAQ zuerst -->
         <div class="faq">
           <details><summary>Kostet die Anfrage etwas?</summary><p>Nein, die Anfrage ist kostenlos &amp; unverbindlich.</p></details>
           <details><summary>Wie schnell werde ich kontaktiert?</summary><p>In der Regel innerhalb von 24 Stunden.</p></details>
           <details><summary>Was passiert mit meinen Daten?</summary><p>Deine Daten werden ausschließlich zur Kontaktaufnahme genutzt.</p></details>
         </div>
+
+        <!-- Danach Badges/Banner -->
+        <div class="badges">
+          <div class="badge">Zertifizierte Partner</div>
+          <div class="badge">Datenschutzkonform</div>
+          <div class="badge">Kostenlos &amp; unverbindlich</div>
+        </div>
       </div>
+
+      <!-- Footer rechts unten -->
+      <footer>
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+      </footer>
     </section>
   </main>
 
